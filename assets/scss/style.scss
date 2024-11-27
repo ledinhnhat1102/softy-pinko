@@ -1,0 +1,301 @@
+/* Header */
+.header{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    &__main{
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 30px;
+        border-radius: 45px;
+        background: #fff;
+    }
+        &__logo{
+            img{
+                height: 30px;
+                width: auto;
+            }
+        }
+        &__menu{
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            li{
+                margin-left: 25px;
+            }
+            a{
+                color: var(--color-text);
+                font-size: 14px;
+                font-weight: 500;
+
+                &:hover{
+                    color: var(--color-two);
+                }
+            }
+            &--active{
+                color: var(--color-two);
+            }
+        }
+    &__icon-mobi{
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px){
+    .header{
+        &__menu{
+            display: none;
+        }
+        &__icon-mobi{
+            display: block;
+            font-size: 24px; 
+        }
+    }
+}
+/* banner-main */
+
+/* Section One */
+.banner-main{
+    background-image: url(../images/banner-bg.png);
+    /* 100vh full chieu cao tu tren xuong duoi */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrap{
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    &__desc{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 767.98px){
+        &__title{
+            font-size: 20px;
+        }
+        &__desc{
+            font-size: 13px;
+        }
+    }
+}
+
+/* End banner-main */
+
+/* box-highlight */
+.box-highlight{
+    margin-top: -220px;
+    &__box{
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+        background: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__icon{
+        background: var(--color-one);
+        width: 80px;
+        height: 80px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 20px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__box:hover &__icon{
+        background: var(--color-two);
+    }
+    &__title{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    &__desc{
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 991.98px){
+        &{
+            margin-top: 0;
+        }
+    }
+}
+
+/* End box-highlight */
+
+/* banner-text */
+.banner-text{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    &__image{
+        text-align: center;
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__title{
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    &--border-bottom{
+        border-bottom: 1px solid #ddd;
+    }
+    @media (max-width: 991.98px){
+        &__image{
+            margin-bottom: 30px;
+        }
+    }
+}
+/* End banner-text */
+
+/* highlight-number*/
+.highlight-number{
+    background-image: url(../images/fun-facts-bg.png);
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__box{
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 20px;
+            background-image: url(../images/circle-dec.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 50%;
+            top: 45%;
+        }
+    }
+    &__content{
+        color: #fff;
+    }
+    &__number{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    &__box:hover &__content{
+        color: #fff;
+        transform: translateY(-20px);
+        transition: all 0.3s ease 0s;
+    }
+    @media(max-width: 991.98px){
+        &__box{
+            text-align: center;
+            margin: 10px 0;
+
+            &::before{
+                display: none;
+            }
+        }
+    }
+    
+}
+/* End highlight-number */
+
+/* Blog Entries */
+.blog-entries{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__box{
+        margin-bottom: 30px;
+    }
+
+    &__image{
+        width: 100%;
+        aspect-ratio: 4/3;
+        border-radius: 15px;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    &__title{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    &__desc{
+        font-size: 13px;
+    }
+    @media (max-width: 767.98px){
+        &__image{
+            max-width: 370px;
+            margin: 0 auto;
+        }
+    }
+}
+/* End Blog Entries */
+
+/* Talk to us */
+.talk-to-us{
+    background: #F2F2FE;
+    padding: 80px 0;
+
+    &__title{
+        font-size: 20px;
+    }
+    &__form{
+        input, textarea{
+            border-radius: 25px;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+
+            &:focus{
+                border-color: #80bdff;
+                outline: 0;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+            }
+        }
+        input{
+            height: 50px;
+        }
+        textarea{
+            height: 150px;
+        }
+    }
+}
+/* End Talk to us */
