@@ -26,13 +26,14 @@ Bạn có thể truy cập phiên bản trực tuyến tại [Softy Pinko Inky](
    git clone https://github.com/username/softy-pinko-inky.git
    
 2. **Di chuyển vào thư mục dự án**:
-  ```bash  
-   cd softy-pinko-inky
-
-4. **Cài đặt các phụ thuộc (nếu có)**:
    ```bash  
+   cd softy-pinko-inky
+   
+4. **Cài đặt các phụ thuộc (nếu có)**:
+    ```bash  
    npm install
-
-5. **Chạy ứng dụng cục bộ**:
+    
+5. **Chạy ứng dụng cục bộ**
    ```bash  
    npm start  
+
