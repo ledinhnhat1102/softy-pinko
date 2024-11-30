@@ -15,7 +15,7 @@ Bạn có thể truy cập phiên bản trực tuyến tại [Softy Pinko Inky](
 - **Triển khai dễ dàng**: Được triển khai trực tiếp trên nền tảng Vercel.  
 
 ## 🚀 Công nghệ sử dụng  
-- **Front-end**: HTML, CSS, JavaScript  
+- **Front-end**: HTML, CSS, JavaScript, Bootstrap
 - **Triển khai**: [Vercel](https://vercel.com/)  
 
 ## 📄 Hướng dẫn sử dụng  
@@ -23,13 +23,16 @@ Bạn có thể truy cập phiên bản trực tuyến tại [Softy Pinko Inky](
 ### Cài đặt cục bộ  
 1. **Clone repository**:  
    ```bash  
-   git clone https://github.com/username/softy-pinko-inky.git  
+   git clone https://github.com/username/softy-pinko-inky.git
+   
 2. **Di chuyển vào thư mục dự án**:
   ```bash  
-   cd softy-pinko-inky  
+   cd softy-pinko-inky
+
 4. **Cài đặt các phụ thuộc (nếu có)**:
    ```bash  
-   npm install  
+   npm install
+
 5. **Chạy ứng dụng cục bộ**:
    ```bash  
    npm start  
